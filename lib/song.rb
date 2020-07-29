@@ -32,7 +32,7 @@ class Song
       # there should be a hash of keys (genres) and values (counts)
     
     @@genres.each do |genre|
-      
+      genre_count[genre] += 1
     end
     # 1) check to see if the genre exists
     # 2) add the genre if it doesn't exist
