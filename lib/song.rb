@@ -31,8 +31,7 @@ class Song
     genre_count = {}
     @@genres.each do |genre|
     #there should be a hash of keys (genres) and values (counts)
-    # (see below) I added this method to #initialize
-    #when a new song is created (initialization), 
+    
       
     end
     # 1) check to see if the genre exists
