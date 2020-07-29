@@ -29,7 +29,7 @@ class Song
   
   def self.genre_count
     genre_count = Hash.new(0)
-      # there should be a hash of keys (genres) and values (counts); set default value of any key to zero
+      # there should be a hash of keys (genres) and values (counts); set default value of any key to zero (Hash.new(0) syntax vs. = {}, which sets keys equal to nil)
     
     @@genres.each do |genre|
       genre_count[genre] += 1
@@ -43,7 +43,11 @@ class Song
   end
   
   def self.artist_count
-  
+    artist_count = Hash.new(0)
+    @@artists.each do |artist|
+      artist_count[artist] += 1 
+    end
+    artist_count
   end
   
 end 
