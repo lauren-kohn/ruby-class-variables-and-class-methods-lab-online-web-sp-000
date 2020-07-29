@@ -13,7 +13,6 @@ class Song
     @@count += 1
     @@genres << genre
     @@artists << artist
-    #self.genre_count
   end
   
   def self.count
@@ -34,11 +33,7 @@ class Song
     #there should be a hash of keys (genres) and values (counts)
     # (see below) I added this method to #initialize
     #when a new song is created (initialization), 
-      if genres.include?(@genre)
-        @@genre_hash[@genre] = 1
-      else
-        @@genre_hash[@genre]
-      end
+      
     end
     # 1) check to see if the genre exists
     # 2) add the genre if it doesn't exist
