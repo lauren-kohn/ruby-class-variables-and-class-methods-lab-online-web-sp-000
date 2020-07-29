@@ -29,7 +29,7 @@ class Song
   end
   
   def self.genre_count
-    @@genre_hash = {}
+    genre_count = {}
     @@genres.each do |genre|
     #there should be a hash of keys (genres) and values (counts)
     # (see below) I added this method to #initialize
