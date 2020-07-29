@@ -29,9 +29,9 @@ class Song
   
   def self.genre_count
     genre_count = {}
-    @@genres.each do |genre|
-    #there should be a hash of keys (genres) and values (counts)
+      # there should be a hash of keys (genres) and values (counts)
     
+    @@genres.each do |genre|
       
     end
     # 1) check to see if the genre exists
