@@ -33,10 +33,10 @@ class Song
     
     @@genres.each do |genre|
       genre_count[genre] += 1
+        # 1) check to see if the genre exists
+        # 2) add the genre if it doesn't exist
+        # 3) increment the value of that genre key
     end
-    # 1) check to see if the genre exists
-    # 2) add the genre if it doesn't exist
-    # 3) increment the value of that genre key
     
     genre_count
       # 4) return the updated hash
