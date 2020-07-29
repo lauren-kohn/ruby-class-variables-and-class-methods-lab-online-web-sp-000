@@ -29,7 +29,7 @@ class Song
   
   def self.genre_count
     genre_count = Hash.new(0)
-      # there should be a hash of keys (genres) and values (counts)
+      # there should be a hash of keys (genres) and values (counts); set default value of any key to zero
     
     @@genres.each do |genre|
       genre_count[genre] += 1
